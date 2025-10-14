@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Qasr Perfumes — Luxury handcrafted fragrances inspired by timeless Arabian elegance." />
+  <title>Qasr Perfumes — Luxury Fragrances</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Fav icon -->
+  <link rel="icon" href="images/favicon.png" type="image/png">
+
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <h1>Qasr <span>Perfumes</span></h1>
+        <p class="tag">Luxury handcrafted fragrances</p>
+      </div>
+      <nav class="nav">
+        <button id="cart-toggle" aria-label="Open cart">Cart (<span id="cart-count">0</span>)</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h2>Timeless Arabian Elegance</h2>
+        <p>Discover six signature scents — crafted with rare oud, saffron & amber. Limited batches, luxury experience.</p>
+      </div>
+    </section>
+
+    <section class="products container" id="products">
+      <!-- Product cards injected by JS -->
+    </section>
+
+    <section class="features container">
+      <div class="feature">
+        <h3>Free shipping over ₹1500</h3>
+        <p>Secure & discreet packaging.</p>
+      </div>
+      <div class="feature">
+        <h3>Artisan blended</h3>
+        <p>Small batch, premium ingredients.</p>
+      </div>
+      <div class="feature">
+        <h3>30-day returns</h3>
+        <p>If unopened and eligible.</p>
+      </div>
+    </section>
+
+    <section class="about container">
+      <h2>About Qasr</h2>
+      <p>Qasr Perfumes crafts luxurious fragrances inspired by Arabian heritage — oud, amber, saffron and floral accords blended to perfection.</p>
+    </section>
+
+    <section class="order-form container" id="order-section">
+      <h2>Place an Order</h2>
+      <p>Review your cart then submit the order. We'll email you confirmation.</p>
+
+      <div id="cart-empty" class="cart-empty">Your cart is empty.</div>
+
+      <div id="cart-items" class="cart-items" hidden></div>
+
+      <form id="checkout-form" class="checkout-form" action="https://formspree.io/f/your-form-id" method="POST" hidden>
+        <input type="hidden" name="order_details" id="order_details" value="">
+        <label>
+          Full name
+          <input type="text" name="name" required>
+        </label>
+        <label>
+          Email
+          <input type="email" name="email" required>
+        </label>
+        <label>
+          Phone
+          <input type="tel" name="phone" required>
+        </label>
+        <label>
+          Shipping address
+          <textarea name="address" required></textarea>
+        </label>
+
+        <div class="checkout-actions">
+          <button type="submit" class="btn-primary">Place Order</button>
+          <button type="button" id="clear-cart" class="btn-ghost">Clear Cart</button>
+        </div>
+
+        <p class="small">After submission you'll receive an email. We will contact you to confirm payment & shipping.</p>
+      </form>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact container">
+      <h2>Contact Us</h2>
+      <p>Have questions or want to know more about our perfumes? Reach out to us:</p>
+      <ul class="contact-info">
+        <li>📞 +91 74839 69317 / +91 63639 42801</li>
+        <li>✉️ <a href="mailto:qasralattar@gmail.com">qasralattar@gmail.com</a></li>
+        <li>📍 Gulbarga, Karnataka</li>
+        <li>📸 <a href="https://instagram.com/qasr_alattar" target="_blank">@qasr_alattar</a></li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Qasr Perfumes. All rights reserved.</p>
+      <p>Contact: 📞 +91 74839 69317 / +91 63639 42801 | ✉️ qasralattar@gmail.com | 📍 Gulbarga, Karnataka</p>
+    </div>
+  </footer>
+
+  <div id="toast" class="toast" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
