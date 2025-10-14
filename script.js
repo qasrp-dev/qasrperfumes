@@ -1,11 +1,11 @@
 /* Product data: replace images/names/prices as needed */
 const PRODUCTS = [
-  { key:'oud-al-amir', name:'Oud Al Amir', price:799, volume:'50ml', desc:'Signature woody-amber oud with saffron and resin.', img:'images/oud ameer.png' },
-  { key:'rose-sahara', name:'1 Million', price:699, volume:'50ml', desc:'Velvet rose with warm balsamic notes.', img:'images/1m.png' },
-  { key:'amber-noir', name:'Badee-oud', price:749, volume:'50ml', desc:'Deep amber, vanilla & smoky oud trail.', img:'images/badee.jpeg' },
-  { key:'citrus-serai', name:'Creed Aventus', price:599, volume:'50ml', desc:'Fresh bergamot with musk base.', img:'images/creed aventus.png' },
-  { key:'velvet-oud', name:'Marj', price:899, volume:'50ml', desc:'Smooth oud wrapped in floral velvet.', img:'images/marj.png' },
-  { key:'jasmine-royale', name:'Ultra Male', price:679, volume:'50ml', desc:'Elegant jasmine with amber warmth.', img:'images/ultra male.jpg' }
+  { key:'oud-al-amir', name:'Oud Al Amir', price:399, volume:'50ml', desc:'Signature woody-amber oud with saffron and resin.', img:'images/oud ameer.png' },
+  { key:'1-million', name:'1 Million', price:349, volume:'50ml', desc:'Velvet rose with warm balsamic notes.', img:'images/1m.png' },
+  { key:'badee-oud', name:'Badee-oud', price:399, volume:'50ml', desc:'Deep amber, vanilla & smoky oud trail.', img:'images/badee.jpeg' },
+  { key:'creed-aventus', name:'Creed Aventus', price:349, volume:'50ml', desc:'Fresh bergamot with musk base.', img:'images/creed aventus.png' },
+  { key:'marj', name:'Marj', price:599, volume:'50ml', desc:'Smooth oud wrapped in floral velvet.', img:'images/marj.png' },
+  { key:'ultra-male', name:'Ultra Male', price:399, volume:'50ml', desc:'Elegant jasmine with amber warmth.', img:'images/ultra male.jpg' }
 ];
 
 const $ = sel => document.querySelector(sel);
@@ -135,3 +135,4 @@ document.getElementById('year').textContent = new Date().getFullYear();
 
 /* Autosave on unload */
 window.addEventListener('beforeunload', ()=> localStorage.setItem('qasr_cart', JSON.stringify(cart)));
+
