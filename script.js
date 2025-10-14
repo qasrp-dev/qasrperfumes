@@ -111,19 +111,8 @@ function populateOrderDetails(){
 }
 
 /* Event listeners */
-function addToCart(key){
-  const idx = cart.findIndex(c=>c.key===key);
-  if(idx === -1) cart.push({key, qty:1});
-  else cart[idx].qty++;
-
-  saveCart();
-
-  // Show alert popup
-  const product = PRODUCTS.find(p => p.key === key);
-  alert(`✅ "${product.name}" added to cart!`);
-
-  // Optional: keep toast as well
-  showToast(`Added "${product.name}" to cart`);
+document.addEventListener('click', (e)=>{
+  if(e.target.matches('.add-to-cart')) addToCart(e.target.dataset.key);
   if(e.target.matches('.qty-increase')) changeQty(e.target.dataset.key, 1);
   if(e.target.matches('.qty-decrease')) changeQty(e.target.dataset.key, -1);
   if(e.target.id === 'cart-toggle'){ window.scrollTo({top: document.getElementById('order-section').offsetTop - 20, behavior:'smooth'}); }
@@ -146,5 +135,6 @@ document.getElementById('year').textContent = new Date().getFullYear();
 
 /* Autosave on unload */
 window.addEventListener('beforeunload', ()=> localStorage.setItem('qasr_cart', JSON.stringify(cart)));
+
 
 
