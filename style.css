@@ -40,7 +40,7 @@ html,body{height:100%;font-family:'Poppins',sans-serif;background:var(--bg);colo
   box-shadow: 0 6px 18px rgba(0,0,0,0.6);
   border:1px solid rgba(255,255,255,0.03);
 }
-.card img{width:100%;height:220px;object-fit:cover;border-radius:12px}
+.card img{width:100%;height:400px;object-fit:cover;border-radius:12px}
 .card h3{font-size:18px;margin-top:6px}
 .card p.desc{color:var(--muted);font-size:13px}
 .card .price{margin-top:auto;font-weight:700}
@@ -89,3 +89,4 @@ html,body{height:100%;font-family:'Poppins',sans-serif;background:var(--bg);colo
 .contact-info{list-style:none;display:flex;flex-direction:column;gap:6px}
 .contact-info li a{color:var(--gold);text-decoration:none}
 .contact-info li a:hover{text-decoration:underline}
+
