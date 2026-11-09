@@ -6,7 +6,7 @@ const PRODUCTS = [
   { key:'creed-aventus', name:'Creed Aventus', price:649, volume:'50ml', desc:'Fresh bergamot with musk base.', img:'images/creed aventus.png' },
   { key:'marj', name:'Marj', price:999, volume:'50ml', desc:'Smooth oud wrapped in floral velvet.', img:'images/marj.png' },
   { key:'ultra-male', name:'Ultra Male', price:799, volume:'50ml', desc:'Elegant jasmine with amber warmth.', img:'images/ultra male.jpg' }
-  { key:'musk-e-tahara', name:'Musk-e-Tahara', price:199, volume:'06.ml', desc:'Elegant ponds with musk warmth.', img:'images/musk e tahara.jpg' }
+  { key:'musk-e-tahara', name:'Musk-e-Tahara', price:199, volume:'06.ml', desc:'Elegant ponds with musk warmth.', img:'images/musk e tahara.jpeg' }
 ];
 
 const $ = sel => document.querySelector(sel);
